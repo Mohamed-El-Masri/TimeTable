@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+#studyPlanTable thead th {
+    background-color: #343a40;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.action-buttons .btn {
+    margin: 0 3px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0;
+    line-height: 1.428571429;
+}
+
+/* Day time selection styles */
+#days-container {
+    background-color: #f8f9fa;
+}
+
+.day-checkbox {
+    cursor: pointer;
+}
+
+.day-time-slot {
+    background-color: rgba(0, 123, 255, 0.05);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+/* Print styles */
+@media print {
+    .btn, .action-buttons {
+        display: none !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: none !important;
+    }
+    
+    .card-header {
+        background-color: #333 !important;
+        color: black !important;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Animation effects */
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.highlight {
+    background-color: #fff9c4;
+    transition: background-color 1s;
+}
